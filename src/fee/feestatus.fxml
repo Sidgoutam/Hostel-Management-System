@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fee.FeestatusController">
+   <children>
+      <StackedBarChart fx:id="bar1" animated="false" layoutX="81.0" layoutY="83.0" prefHeight="325.0" prefWidth="557.0" title="Hostel Wise Electric bill status">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </StackedBarChart>
+      <ComboBox fx:id="hostel" layoutX="235.0" layoutY="21.0" onAction="#showyear" prefWidth="150.0" promptText="Select hostel" />
+      <Button layoutX="14.0" layoutY="8.0" mnemonicParsing="false" onAction="#goback" text="Back" />
+      <Label fx:id="label1" layoutX="218.0" layoutY="435.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="year" layoutX="422.0" layoutY="21.0" onAction="#loadchart" prefWidth="150.0" promptText="Choose year" />
+   </children>
+</AnchorPane>

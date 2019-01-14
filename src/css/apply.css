@@ -1,0 +1,16 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.jfx-apply{
+-fx-background-color: #1976D2;
+-fx-text-fill: white;
+
+}
+.jfx-apply:hover{
+    -fx-background-color: greenyellow
+}
+

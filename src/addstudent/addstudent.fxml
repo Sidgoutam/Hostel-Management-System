@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="877.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addstudent.AddstudentController">
+   <children>
+      <VBox layoutX="230.0" layoutY="-2.0" prefHeight="867.0" prefWidth="645.0">
+         <children>
+            <ScrollPane prefHeight="650.0" prefWidth="200.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="600.0">
+                     <children>
+                        <HBox id="HBox" prefHeight="844.0" prefWidth="652.0" style="-fx-background-color: skyblue;">
+                           <children>
+                              <Pane prefHeight="859.0" prefWidth="652.0">
+                                 <children>
+                                    <Text layoutX="-1.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ENTER DETAILS FOR NEW ALLOTMENT" textAlignment="CENTER" wrappingWidth="558.0000034570694">
+                                       <font>
+                                          <Font name="Arial" size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Label layoutX="40.0" layoutY="54.0" prefHeight="21.0" prefWidth="123.0" text="Hostel No*. :" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="97.0" prefHeight="21.0" prefWidth="123.0" text="Room No.* :" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="143.0" prefHeight="21.0" prefWidth="146.0" text="Registration No*. :" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="186.0" prefHeight="21.0" prefWidth="123.0" text="Name* :" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="273.0" prefHeight="21.0" prefWidth="135.0" text="Father's Name :" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="313.0" prefHeight="21.0" prefWidth="135.0" text="Mother's Name :" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="354.0" prefHeight="21.0" prefWidth="123.0" text="Roll No. :" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="398.0" prefHeight="21.0" prefWidth="173.0" text="Date of Birth :" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="444.0" prefHeight="21.0" prefWidth="155.0" text="Mobile no" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="492.0" prefHeight="21.0" prefWidth="173.0" text="Guardian no" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="533.0" prefHeight="21.0" prefWidth="173.0" text="Permanent Address :" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="575.0" prefHeight="21.0" prefWidth="123.0" text="City :" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="614.0" prefHeight="21.0" prefWidth="123.0" text="State* :" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton cancelButton="true" layoutX="134.0" layoutY="721.0" prefHeight="44.0" prefWidth="162.0" styleClass="jfx-cancel" stylesheets="@../css/cancel.css" text="Cancel">
+                                       <font>
+                                          <Font name="Arial" size="24.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton id="apply" layoutX="334.0" layoutY="721.0" onAction="#SubmitDatabase" prefHeight="45.0" prefWidth="190.0" styleClass="jfx-apply" stylesheets="@../css/apply.css" text="Apply" textFill="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <ComboBox fx:id="Hostelno" layoutX="242.0" layoutY="51.0" onMouseClicked="#selecthostel" prefHeight="16.0" prefWidth="150.0" promptText="hostel" />
+                                    <ComboBox fx:id="Roomno" layoutX="242.0" layoutY="94.0" onMouseClicked="#chooseoption" prefWidth="150.0" promptText="room" />
+                                    <TextField fx:id="Regno" layoutX="242.0" layoutY="140.0" prefHeight="27.0" prefWidth="313.0" promptText="Enter Registration Number">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="Name" layoutX="242.0" layoutY="183.0" prefHeight="27.0" prefWidth="313.0" promptText="Enter Name of Student">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="Fathername" layoutX="242.0" layoutY="270.0" prefHeight="27.0" prefWidth="313.0" promptText="Enter Father's Name">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="Mothername" layoutX="242.0" layoutY="310.0" prefHeight="27.0" prefWidth="313.0" promptText="Enter Mother's Name">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="Rollno" layoutX="242.0" layoutY="351.0" prefHeight="27.0" prefWidth="313.0" promptText="Enter Roll Number">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="Mobileno" layoutX="242.0" layoutY="441.0" prefHeight="27.0" prefWidth="313.0" promptText="Enter 10 Digit Mobile Number">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="Guardianno" layoutX="242.0" layoutY="489.0" prefHeight="27.0" prefWidth="313.0" promptText="Enter 10 Digit Number">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="Address" layoutX="242.0" layoutY="530.0" prefHeight="27.0" prefWidth="313.0" promptText="Enter Permanent Address">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="City" layoutX="242.0" layoutY="572.0" prefHeight="27.0" prefWidth="313.0" promptText="Enter City of Residence ">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <ComboBox fx:id="State" layoutX="242.0" layoutY="611.0" onMouseClicked="#selectstate" prefWidth="150.0" />
+                                    <Label layoutX="40.0" layoutY="660.0" prefHeight="21.0" prefWidth="123.0" text="E-mail ID :" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="229.0" prefHeight="21.0" prefWidth="123.0" text="Sex* :" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="Email" layoutX="242.0" layoutY="657.0" prefHeight="27.0" prefWidth="313.0" promptText="Enter City of Residence ">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <JFXRadioButton layoutX="242.0" layoutY="231.0" text="Male">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="sex" />
+                                       </toggleGroup>
+                                    </JFXRadioButton>
+                                    <JFXRadioButton layoutX="341.0" layoutY="231.0" text="Female" toggleGroup="$sex" />
+                                    <JFXDatePicker fx:id="Dob" layoutX="241.0" layoutY="395.0" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <Button layoutY="1.0" mnemonicParsing="false" onAction="#spage" text="Back" />
+      <JFXTextArea editable="false" layoutY="41.0" prefHeight="609.0" prefWidth="230.0" style="-fx-background-color: #abdcab;" text="Facilities :-&#10;&#10;1. A tabel&#10;2. A chair&#10;3. A bed&#10;4. A mattresses&#10;&#10;Service charges :&#10; 1. 3000  rupees caution money(Refundable)&#10; 2. 1000 rupees admission fee&#10;" />
+   </children>
+</AnchorPane>

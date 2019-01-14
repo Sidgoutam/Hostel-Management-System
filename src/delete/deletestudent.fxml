@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="delete.DeletestudentController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#spage" text="Back" />
+      <TextField fx:id="reg" layoutX="80.0" layoutY="172.0" onAction="#check" promptText="Enter Reg no" />
+      <Label layoutX="409.0" layoutY="28.0" text="Delete Student Records">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="112.0" text="Note : Before deleting the student records make sure that there is no money due" textFill="#971b1b">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="280.0" layoutY="172.0" mnemonicParsing="false" onAction="#check" text="check" />
+      <Pane fx:id="p1" layoutX="80.0" layoutY="234.0" prefHeight="228.0" prefWidth="392.0" style="-fx-background-color: skyblue;">
+         <children>
+            <TextField fx:id="name" layoutX="195.0" layoutY="28.0" />
+            <TextField fx:id="hostel" layoutX="195.0" layoutY="87.0" />
+            <TextField fx:id="room" layoutX="195.0" layoutY="139.0" />
+            <Label layoutX="106.0" layoutY="33.0" text="Name">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="106.0" layoutY="92.0" text="Hostel">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="106.0" layoutY="144.0" text="Room">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="255.0" layoutY="187.0" mnemonicParsing="false" onAction="#correct" text="correct" />
+            <Button fx:id="cancel" layoutX="321.0" layoutY="187.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+         </children>
+      </Pane>
+      <TableView fx:id="table1" layoutX="542.0" layoutY="186.0" prefHeight="426.0" prefWidth="406.0">
+        <columns>
+          <TableColumn fx:id="cbill" prefWidth="108.0" text="Bill type" />
+          <TableColumn fx:id="cmonth" prefWidth="84.0" text="month" />
+            <TableColumn fx:id="cyear" prefWidth="101.0" text="year" />
+            <TableColumn fx:id="ctotal" prefWidth="112.0" text="Total due" />
+        </columns>
+      </TableView>
+      <Label layoutX="561.0" layoutY="155.0" text="Due Bills" />
+      <Button fx:id="delete" layoutX="145.0" layoutY="534.0" mnemonicParsing="false" onAction="#deletedata" text="Delete Student">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>src/addstudent/AddstudentController.java</url>
+            <bookmark id="1">
+                <name/>
+                <line>85</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/search/SearchController.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/Welcome/WelcomeController.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/preloader/pre.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/fee/ShowpendingbillController.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/addstudent/AddController.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/changeroom/Shift_to_emptyRoomController.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/roomrent/rent.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/fee/FeestatusController.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/basic/StudentController.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/addrooms/AddnewroomsController.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/addstudent/AddstudentController.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/viewstudents/students.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/delete/DeletestudentController.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/home/G1Controller.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/roomrent/checkrent.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/fee/ShowsubmitbillController.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/login/DbConnection.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/viewstudents/ViewstudentsController.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/delete/check1.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/roomrent/AddrenthostelController.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/hostel_mgmt/FXMLDocumentController.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/basic/BillController.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/delete/DeleteroomController.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/fee/FeeController.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/editstudent/EditdetailsController.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/forgotpassword/Forgot_passwordController.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/addstudent/addstudent.fxml</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/login/LoginpageController.java</file>
+            <file>file:/Users/apple/NetBeansProjects/hostel_mgmt/src/hostel_mgmt/Hostel_mgmt.java</file>
+        </group>
+    </open-files>
+</project-private>

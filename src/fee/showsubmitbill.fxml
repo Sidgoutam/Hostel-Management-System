@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1011.0" style="-fx-background-color: #123456;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fee.ShowsubmitbillController">
+   <children>
+      <TableView fx:id="billpaid" layoutX="3.0" layoutY="138.0" onMouseClicked="#selectitem" prefHeight="513.0" prefWidth="1005.0">
+        <columns>
+          <TableColumn fx:id="Columnid" prefWidth="33.0" text="id" />
+            <TableColumn fx:id="Columnreg" prefWidth="71.0" text="reg. no" />
+          <TableColumn fx:id="Columnname" prefWidth="79.0" text="Name" />
+            <TableColumn fx:id="Columnhostel" prefWidth="70.0" text="hostel" />
+            <TableColumn fx:id="Columnroom" prefWidth="71.0" text="room" />
+            <TableColumn fx:id="Columnmonth" text="month" />
+            <TableColumn fx:id="Columnyear" prefWidth="91.0" text="year" />
+            <TableColumn fx:id="Columntotalunit" prefWidth="48.0" text="unit" />
+            <TableColumn prefWidth="330.0" text="Ruppes">
+               <columns>
+                  <TableColumn fx:id="Columnunitrate" prefWidth="64.0" text="unit rate" />
+                  <TableColumn fx:id="Columnamount" prefWidth="96.0" text="amount due" />
+                  <TableColumn fx:id="Columnfine" prefWidth="57.0" text="fine" />
+                  <TableColumn fx:id="Columntotal" prefWidth="86.0" text="Total due" />
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="Columndate" prefWidth="64.0" text="due date" />
+            <TableColumn fx:id="Columnpayid" prefWidth="150.0" text="payment id" />
+        </columns>
+      </TableView>
+      <Button layoutX="6.0" mnemonicParsing="false" onAction="#bill" prefHeight="27.0" prefWidth="77.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #1e656d; -fx-border-color: white;" text="Back" textFill="WHITE" />
+      <TextField fx:id="SearchField" layoutX="83.0" layoutY="64.0" onKeyPressed="#filtersearch" prefHeight="27.0" prefWidth="288.0" promptText="Search By Reg, name,month,or year" />
+      <Button layoutX="917.0" layoutY="4.0" mnemonicParsing="false" onAction="#printdata" prefHeight="29.0" prefWidth="92.0" text="Print" />
+      <Button layoutX="401.0" layoutY="64.0" mnemonicParsing="false" onAction="#lock1" text="Lock" />
+      <HBox layoutX="16.0" layoutY="104.0" prefHeight="27.0" prefWidth="458.0" style="-fx-background-color: white;">
+         <children>
+            <CheckBox fx:id="creg1" mnemonicParsing="false" prefHeight="18.0" prefWidth="62.0" selected="true" text="reg" />
+            <CheckBox fx:id="cname1" mnemonicParsing="false" selected="true" text="Name" />
+            <CheckBox fx:id="chostel1" mnemonicParsing="false" selected="true" text="hostel" />
+            <CheckBox fx:id="croom1" mnemonicParsing="false" selected="true" text="room" />
+            <CheckBox fx:id="cmonth1" mnemonicParsing="false" selected="true" text="month" />
+            <CheckBox fx:id="cyear1" mnemonicParsing="false" selected="true" text="year" />
+            <CheckBox fx:id="cpayid1" mnemonicParsing="false" selected="true" text="payment ID" />
+         </children>
+      </HBox>
+      <TextField fx:id="SearchField1" layoutX="624.0" layoutY="64.0" onKeyPressed="#filtersearch1" prefHeight="27.0" prefWidth="288.0" promptText="Search By Reg, name,month,or year" />
+      <Button layoutX="926.0" layoutY="64.0" mnemonicParsing="false" onAction="#reset" text="Reset" />
+      <HBox layoutX="539.0" layoutY="104.0" prefHeight="27.0" prefWidth="458.0" style="-fx-background-color: white;">
+         <children>
+            <CheckBox fx:id="creg11" mnemonicParsing="false" prefHeight="18.0" prefWidth="62.0" selected="true" text="reg" />
+            <CheckBox fx:id="cname11" mnemonicParsing="false" selected="true" text="Name" />
+            <CheckBox fx:id="chostel11" mnemonicParsing="false" selected="true" text="hostel" />
+            <CheckBox fx:id="croom11" mnemonicParsing="false" selected="true" text="room" />
+            <CheckBox fx:id="cmonth11" mnemonicParsing="false" selected="true" text="month" />
+            <CheckBox fx:id="cyear11" mnemonicParsing="false" selected="true" text="year" />
+            <CheckBox fx:id="cpayid11" mnemonicParsing="false" selected="true" text="payment ID" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

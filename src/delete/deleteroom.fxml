@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="delete.DeleteroomController">
+   <children>
+      <Button layoutX="14.0" layoutY="1.0" mnemonicParsing="false" onAction="#rooms" text="Back" />
+      <Label layoutX="79.0" layoutY="107.0" text="Select hostel :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="182.0" prefHeight="30.0" prefWidth="168.0" text="Selct room:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="Hostelno" layoutX="330.0" layoutY="109.0" onMouseClicked="#selecthostel" prefWidth="150.0" promptText="Select" />
+      <ComboBox fx:id="Roomno" layoutX="330.0" layoutY="184.0" onMouseClicked="#selectroom" prefWidth="150.0" promptText="Select" />
+      <Button layoutX="421.0" layoutY="282.0" mnemonicParsing="false" onAction="#delroom" text="Delete" />
+   </children>
+</AnchorPane>

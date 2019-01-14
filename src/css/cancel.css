@@ -1,0 +1,15 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.jfx-cancel{
+-fx-background-color: red;
+-fx-text-fill: white;
+
+}
+.jfx-cancel:hover{
+    -fx-background-color: greenyellow
+}

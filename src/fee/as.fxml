@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="950.0">
+         <children>
+             
+      <VBox layoutX="298.0" prefHeight="842.0" prefWidth="644.0">
+         <children>
+            <HBox prefHeight="26.0" prefWidth="558.0" style="-fx-background-color: #FFFF33;">
+               <children>
+                  <Text fill="#464242" strokeType="OUTSIDE" strokeWidth="0.0" text="IIIT HOSTEL " textAlignment="CENTER" wrappingWidth="557.0107421875">
+                     <font>
+                        <Font name="Lucida Sans Demibold" size="40.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox id="HBox" prefHeight="813.0" prefWidth="639.0" style="-fx-background-color: lightblue;" styleClass="jfx-add" stylesheets="@../NetBeansProjects/hostel_mgmt/src/css/students.css">
+               <children>
+                  <Pane prefHeight="803.0" prefWidth="640.0" style="-fx-background-image: bck.jpg;" styleClass="jfx-add" stylesheets="@../NetBeansProjects/hostel_mgmt/src/css/students.css">
+                     <children>
+                        <Text layoutX="-1.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ENTER DETAILS FOR ELECTRICITY BILL" textAlignment="CENTER" wrappingWidth="558.0000034570694">
+                           <font>
+                              <Font name="Arial" size="20.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="fees" editable="false" layoutX="248.0" layoutY="374.0" prefHeight="27.0" prefWidth="200.0" promptText="in INDIAN Currence Rs.">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </TextField>
+                        <DatePicker fx:id="duedate" layoutX="232.0" layoutY="205.0" prefHeight="27.0" prefWidth="99.0" />
+                        <Label layoutX="24.0" layoutY="62.0" prefHeight="21.0" prefWidth="123.0" text="Year :" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="128.0" prefHeight="21.0" prefWidth="123.0" text="Month :" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="year" layoutX="232.0" layoutY="59.0" prefHeight="16.0" prefWidth="150.0" promptText="year" />
+                        <ComboBox fx:id="month" layoutX="232.0" layoutY="125.0" prefHeight="16.0" prefWidth="150.0" promptText="month" />
+                        <Label layoutX="13.0" layoutY="377.0" prefHeight="21.0" prefWidth="146.0" text="Electricity Fees :" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="197.0" prefHeight="21.0" prefWidth="123.0" text="Due Date :" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="13.0" layoutY="423.0" prefHeight="21.0" prefWidth="146.0" text="Fine charges" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="fine" layoutX="231.0" layoutY="420.0" prefHeight="27.0" prefWidth="200.0" promptText="in INDIAN Currence Rs.">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </TextField>
+                        <Pane fx:id="p1" layoutX="191.0" layoutY="526.0" prefHeight="251.0" prefWidth="232.0">
+                           <children>
+                              <TextField fx:id="reg" layoutX="18.0" layoutY="11.0" prefHeight="27.0" prefWidth="200.0" promptText="Enter Registration Number">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </TextField>
+                              <JFXButton layoutX="167.0" layoutY="50.0" onAction="#checkname" text="Check" />
+                              <TextField fx:id="name" editable="false" layoutX="18.0" layoutY="77.0" prefHeight="27.0" prefWidth="200.0" promptText="Name:">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </TextField>
+                              <JFXButton id="apply" layoutX="62.0" layoutY="130.0" onAction="#addelectricfee" prefHeight="45.0" prefWidth="135.0" styleClass="jfx-apply" stylesheets="@../css/apply.css" text="Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="p2" layoutX="407.0" layoutY="544.0" prefHeight="251.0" prefWidth="232.0">
+                           <children>
+                              <ComboBox fx:id="hostelno" layoutX="14.0" layoutY="14.0" onMouseClicked="#selecthostel" prefHeight="16.0" prefWidth="150.0" promptText="choose hostel" />
+                              <JFXButton id="apply" layoutX="64.0" layoutY="111.0" onAction="#addroomwise" prefHeight="45.0" prefWidth="135.0" styleClass="jfx-apply" stylesheets="@../css/apply.css" text="Add">
+                                 <font>
+                                    <Font name="Arial" size="24.0" />
+                                 </font>
+                              </JFXButton>
+                              <ComboBox fx:id="roomno" layoutX="14.0" layoutY="67.0" onMouseClicked="#chooseoption" prefHeight="16.0" prefWidth="150.0" promptText="choose room" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="p3" layoutX="24.0" layoutY="531.0" prefHeight="240.0" prefWidth="171.0">
+                           <children>
+                              <ComboBox fx:id="hostelno1" layoutY="14.0" onMouseClicked="#selecthostel" prefHeight="27.0" prefWidth="150.0" promptText="choose hostel" />
+                              <JFXButton id="apply" layoutX="7.0" layoutY="65.0" onAction="#addhostelwise" prefHeight="27.0" prefWidth="108.0" styleClass="jfx-apply" stylesheets="@../css/apply.css" text="Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </Pane>
+                        <ComboBox fx:id="select" layoutX="473.0" layoutY="49.0" prefWidth="150.0" promptText="type select" />
+                        <Button layoutX="557.0" layoutY="98.0" mnemonicParsing="false" onAction="#typeselector" text="ok" />
+                        <Label layoutX="18.0" layoutY="253.0" prefHeight="21.0" prefWidth="146.0" text="Total unit" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="totalunit" layoutX="207.0" layoutY="250.0" prefHeight="27.0" prefWidth="200.0" promptText="in KWh">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="unitrate" layoutX="241.0" layoutY="320.0" prefHeight="27.0" prefWidth="200.0" promptText="in INDIAN Currence Rs.">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="18.0" layoutY="323.0" prefHeight="21.0" prefWidth="146.0" text="Standard unit rate" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="475.0" prefHeight="21.0" prefWidth="146.0" text="Total fee" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="totalfee" editable="false" layoutX="231.0" layoutY="472.0" prefHeight="27.0" prefWidth="200.0" promptText="in INDIAN Currence Rs.">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#bill" text="Back" />
+   
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

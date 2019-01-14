@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="616.0" prefWidth="605.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewstudents.StudentidController">
+   <children>
+      <Pane prefHeight="614.0" prefWidth="603.0" style="-fx-background-color: pink;">
+         <children>
+            <Label layoutX="60.0" layoutY="221.0" text="Father name :" textFill="#572020">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="mobile" editable="false" layoutX="250.0" layoutY="343.0" text="govind" />
+            <JFXTextField fx:id="state" editable="false" layoutX="250.0" layoutY="406.0" text="govind" />
+            <JFXTextField fx:id="email" editable="false" layoutX="250.0" layoutY="280.0" text="govind" />
+            <JFXTextField fx:id="father" editable="false" layoutX="250.0" layoutY="222.0" text="govind" />
+            <Label layoutX="112.0" layoutY="279.0" text="Email id :" textFill="#572020">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="342.0" text="Mobile no :" textFill="#572020">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="131.0" layoutY="405.0" prefHeight="29.0" prefWidth="83.0" text="State :" textFill="#572020">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="200.0" prefWidth="603.0" style="-fx-background-color: #f18d9e;">
+               <children>
+                  <FontAwesomeIconView glyphName="USER" layoutX="39.0" layoutY="157.0" size="105" text="" />
+                  <Label layoutX="221.0" layoutY="100.0" text="Reg no:" textFill="#572020">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="reg" alignment="CENTER" editable="false" layoutX="321.0" layoutY="81.0" prefHeight="27.0" prefWidth="95.0" text="23">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="153.0" layoutY="39.0" text="Name:" textFill="#572020">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="299.0" layoutY="155.0" text="Age :" textFill="#572020">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="age" alignment="CENTER" editable="false" layoutX="377.0" layoutY="147.0" prefHeight="27.0" prefWidth="95.0" text="17">
+                     <font>
+                        <Font size="20.0" />
+                     </font></JFXTextField>
+                  <JFXTextField fx:id="name" alignment="CENTER" editable="false" layoutX="241.0" layoutY="24.0" prefHeight="40.0" prefWidth="271.0" text="Govind Singh">
+                     <font>
+                        <Font size="20.0" />
+                     </font></JFXTextField>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="changeroom.Swap_to_roomController">
+   <children>
+      <JFXButton fx:id="swap" buttonType="RAISED" layoutX="390.0" layoutY="580.0" onAction="#swaproom" prefHeight="45.0" prefWidth="120.0" ripplerFill="#942828" style="-fx-background-color: #10abc1;" text="Swap">
+         <font>
+            <Font size="30.0" />
+         </font></JFXButton>
+      <Button layoutX="8.0" layoutY="9.0" mnemonicParsing="false" onAction="#shift" text="back" />
+      <SplitPane dividerPositions="0.5007407407407407" layoutX="82.0" layoutY="94.0" prefHeight="462.0" prefWidth="677.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="69.0" layoutY="11.0" text="Student 1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="reg1" layoutY="79.0" promptText="Enter reg. no:" />
+                  <JFXButton fx:id="check1" layoutX="186.0" layoutY="66.0" onAction="#checkreg1" text="Check" />
+                  <VBox fx:id="p1" layoutX="39.0" layoutY="129.0" prefHeight="254.0" prefWidth="257.0">
+                     <children>
+                        <FontAwesomeIconView glyphName="USER" size="50" text="" textAlignment="RIGHT" wrappingWidth="219.28571319580078" />
+                        <Label alignment="TOP_LEFT" prefHeight="17.0" prefWidth="262.0" text="Name:" textFill="#891414">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="name1" editable="false" prefHeight="27.0" prefWidth="190.0">
+                           <padding>
+                              <Insets bottom="20.0" top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="17.0" prefWidth="264.0" text="Room :" textFill="#891414">
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="hostel1" editable="false">
+                           <padding>
+                              <Insets bottom="20.0" top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <Label prefHeight="17.0" prefWidth="286.0" text="Hostel :" textFill="#891414">
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="room1" editable="false">
+                           <padding>
+                              <Insets bottom="20.0" top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="pane2" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="78.0" layoutY="10.0" text="Student 2">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="reg2" layoutX="38.0" layoutY="79.0" promptText="Enter reg. no:" />
+                  <JFXButton fx:id="check2" layoutX="218.0" layoutY="71.0" onAction="#checkreg2" text="Check" />
+                  <VBox fx:id="p2" layoutX="38.0" layoutY="129.0" prefHeight="254.0" prefWidth="257.0">
+                     <children>
+                        <FontAwesomeIconView glyphName="USER" size="50" text="" textAlignment="RIGHT" wrappingWidth="226.28571319580078" />
+                        <Label alignment="TOP_LEFT" prefHeight="17.0" prefWidth="262.0" text="Name:" textFill="#1b2264">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="name2" editable="false" prefHeight="27.0" prefWidth="190.0">
+                           <padding>
+                              <Insets bottom="20.0" top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="17.0" prefWidth="264.0" text="Room :" textFill="#1b2264">
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="hostel2" editable="false">
+                           <padding>
+                              <Insets bottom="20.0" top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <Label prefHeight="17.0" prefWidth="286.0" text="Hostel :" textFill="#1b2264">
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="room2" editable="false">
+                           <padding>
+                              <Insets bottom="20.0" top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <JFXButton layoutX="550.0" layoutY="609.0" onAction="#refresh" text="Cancel" textFill="#381fc6">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

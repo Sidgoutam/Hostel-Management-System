@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="process.ElecfeeController">
+   <children>
+      <JFXButton layoutX="453.0" layoutY="31.0" onAction="#refreshbill" text="Refresh" />
+      <TableView fx:id="billpending" layoutX="14.0" layoutY="138.0" prefHeight="382.0" prefWidth="976.0">
+        <columns>
+          <TableColumn fx:id="Columnid" prefWidth="33.0" text="id" />
+            <TableColumn fx:id="Columnreg" prefWidth="71.0" text="reg. no" />
+          <TableColumn fx:id="Columnname" prefWidth="79.0" text="Name" />
+            <TableColumn fx:id="Columnhostel" prefWidth="70.0" text="hostel" />
+            <TableColumn fx:id="Columnroom" prefWidth="71.0" text="room" />
+            <TableColumn fx:id="Columnmonth" text="month" />
+            <TableColumn fx:id="Columnyear" prefWidth="91.0" text="year" />
+            <TableColumn fx:id="Columntotalunit" prefWidth="75.0" text="total unit(KWh)" />
+            <TableColumn prefWidth="289.0" text="Ruppes">
+               <columns>
+                  <TableColumn fx:id="Columnunitrate" prefWidth="64.0" text="unit rate" />
+                  <TableColumn fx:id="Columnamount" prefWidth="96.0" text="amount due" />
+                  <TableColumn fx:id="Columnfine" prefWidth="57.0" text="fine" />
+                  <TableColumn fx:id="Columntotal" prefWidth="86.0" text="Total due" />
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="Columndate" prefWidth="104.0" text="due date" />
+        </columns>
+      </TableView>
+      
+      <TextField fx:id="SearchField" layoutX="146.0" layoutY="31.0" onKeyPressed="#filtersearch" prefHeight="27.0" prefWidth="288.0" promptText="Search By Reg, name,month,or year" />
+      <JFXButton buttonType="RAISED" layoutX="728.0" layoutY="575.0" onAction="#confirm" prefHeight="40.0" prefWidth="123.0" style="-fx-background-color: #00bbaa; -fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" text="Confirm">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="893.0" layoutY="581.0" onAction="#cancel" style="-fx-background-color: #8ba8ba; -fx-border-color: white; -fx-background-radius: 15; -fx-border-radius: 15;" text="Cancel">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      
+   </children>
+</AnchorPane>

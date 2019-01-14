@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rules.RuleController">
+   <children>
+       <VBox prefHeight="650.0" prefWidth="300.0" style="-fx-background-color: #525150;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="300.0" style="-fx-background-color: #00A2D3;" text="Admin Panel" textFill="#fcfafa">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="Euphemia UCAS" size="36.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="300.0" styleClass="btns" stylesheets="@../css/styleproject.css">
+               <children>
+                  <FontAwesomeIconView glyphName="SEARCH" glyphStyle="-fx-fill:#7C8184" size="1.9em" />
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onAction="#search" prefHeight="37.0" prefWidth="192.0" styleClass="btns" stylesheets="@../css/styleproject.css" text="Search" textFill="#f5f2f2">
+                     <font>
+                        <Font name="Apple Symbols" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="85.0" prefHeight="60.0" prefWidth="300.0" styleClass="btns" stylesheets="@../css/styleproject.css">
+               <children>
+                  <FontAwesomeIconView glyphName="DASHBOARD" glyphStyle="-fx-fill:#7C8184" size="1.9em" />
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onAction="#dashboard" prefHeight="35.0" prefWidth="181.0" styleClass="btns" stylesheets="@../css/styleproject.css" text="Dashboard" textFill="#f5f2f2">
+                     <font>
+                        <Font name="Apple Symbols" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="113.0" prefHeight="60.0" prefWidth="300.0" styleClass="btns" stylesheets="@../css/styleproject.css">
+               <children>
+                  <FontAwesomeIconView glyphName="BUILDING" glyphStyle="-fx-fill:#7C8184" size="1.9em" />
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onAction="#rooms" prefHeight="27.0" prefWidth="181.0" styleClass="btns" stylesheets="@../css/styleproject.css" text="Rooms &amp; Hostel" textFill="#f5f2f2">
+                     <font>
+                        <Font name="Apple Symbols" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="153.0">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="193.0" prefHeight="60.0" prefWidth="300.0" styleClass="btns" stylesheets="@../css/styleproject.css">
+               <children>
+                  <FontAwesomeIconView glyphName="USERS" glyphStyle="-fx-fill:#7C8184" size="1.9em" wrappingWidth="23.428571701049805" />
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onAction="#student" prefHeight="27.0" prefWidth="181.0" styleClass="btns" stylesheets="@../css/styleproject.css" text="Student section" textFill="#f5f2f2">
+                     <font>
+                        <Font name="Apple Symbols" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="233.0" prefHeight="60.0" prefWidth="300.0" styleClass="btns" stylesheets="@../css/styleproject.css">
+               <children>
+                  <FontAwesomeIconView glyphName="FILE" glyphStyle="-fx-fill:#7C8184" size="1.9em" />
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onAction="#shiftroom" prefHeight="27.0" prefWidth="181.0" styleClass="btns" stylesheets="@../css/styleproject.css" text="Shift rooms" textFill="#f5f2f2">
+                     <font>
+                        <Font name="Apple Symbols" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="300.0" styleClass="btns" stylesheets="@../css/styleproject.css">
+               <children>
+                  <FontAwesomeIconView glyphName="FILE" glyphStyle="-fx-fill:#7C8184" size="1.9em" />
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onAction="#bill" prefHeight="27.0" prefWidth="181.0" styleClass="btns" stylesheets="@../css/styleproject.css" text="Electricity bill" textFill="#f5f2f2">
+                     <font>
+                        <Font name="Apple Symbols" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="300.0" styleClass="btns" stylesheets="@../css/styleproject.css">
+               <children>
+                  <FontAwesomeIconView glyphName="FILE" glyphStyle="-fx-fill:#7C8184" size="1.9em" />
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onAction="#rent" prefHeight="27.0" prefWidth="181.0" styleClass="btns" stylesheets="@../css/styleproject.css" text="Room Rent" textFill="#f5f2f2">
+                     <font>
+                        <Font name="Apple Symbols" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="300.0" styleClass="btns" stylesheets="@../css/styleproject.css">
+               <children>
+                  <FontAwesomeIconView glyphName="FILE" glyphStyle="-fx-fill:#7C8184" size="1.9em" />
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onAction="#mess" prefHeight="27.0" prefWidth="181.0" styleClass="btns" stylesheets="@../css/styleproject.css" text="Mess bill" textFill="#f5f2f2">
+                     <font>
+                        <Font name="Apple Symbols" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="273.0" prefHeight="60.0" prefWidth="300.0" styleClass="btns" stylesheets="@../css/styleproject.css">
+               <children>
+                  <FontAwesomeIconView glyphName="GEAR" glyphStyle="-fx-fill:#7C8184" size="1.9em" />
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onAction="#setting" prefHeight="27.0" prefWidth="181.0" styleClass="btns" stylesheets="@../css/styleproject.css" text="Settings" textFill="#f5f2f2">
+                     <font>
+                        <Font name="Apple Symbols" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <Pane prefHeight="60.0" prefWidth="200.0">
+               <children>
+                  <FontAwesomeIconView glyphName="HOME" layoutX="14.0" layoutY="40.0" onMouseClicked="#home" size="32" />
+                  <FontAwesomeIconView fx:id="lout" glyphName="SIGN_OUT" glyphStyle="IN" layoutX="244.0" layoutY="40.0" onMouseClicked="#logout" size="32" />
+                  <FontAwesomeIconView glyphName="USERS" layoutX="86.0" layoutY="42.0" onMouseClicked="#creator" size="32" text="" />
+                  <FontAwesomeIconView glyphName="GAVEL" layoutX="167.0" layoutY="40.0" onMouseClicked="#rules" size="32" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <JFXTextArea fx:id="rule1" editable="false" layoutX="310.0" layoutY="69.0" prefHeight="507.0" prefWidth="637.0" />
+      <Text fill="#eb1a1a" layoutX="532.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IIIT Kalyani Hostel">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Label layoutX="310.0" layoutY="41.0" text="Rules &amp; Regulations :-" textFill="#6b6a0f">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="edit" layoutX="768.0" layoutY="599.0" mnemonicParsing="false" onAction="#onedit" prefHeight="27.0" prefWidth="63.0" style="-fx-background-color: white; -fx-border-color: red; -fx-background-radius: 15; -fx-border-radius: 15;" text="Edit" textFill="#0c062c">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="save" layoutX="877.0" layoutY="599.0" mnemonicParsing="false" onAction="#onsave" style="-fx-background-color: red; -fx-border-color: black; -fx-background-radius: 16; -fx-border-radius: 16;" text="Save" textFill="#f4f2f2">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="324.0" layoutY="604.0" mnemonicParsing="false" onAction="#savepdf" prefHeight="34.0" prefWidth="103.0" style="-fx-background-color: lightgreen; -fx-border-color: blue; -fx-background-radius: 12; -fx-border-radius: 12;" text="Make Pdf">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

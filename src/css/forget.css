@@ -1,0 +1,18 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}/*
+ * Empty Stylesheet file.
+ */
+
+.jfx-#forget{
+-fx-background-color: red;
+-fx-text-fill: white;
+
+}
+.jfx-#forget:hover{
+    -fx-background-color: greenyellow
+}

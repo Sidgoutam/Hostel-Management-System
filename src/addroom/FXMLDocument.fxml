@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="937.0" styleClass="parent" stylesheets="@../../../../../Downloads/styleproject.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addroom.FXMLDocumentController">
+   <children>
+      <VBox prefHeight="650.0" prefWidth="300.0" style="-fx-background-color: #525150;">
+         <children>
+            <HBox prefHeight="27.0" prefWidth="724.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="121.0" prefWidth="300.0" style="-fx-background-color: #00A2D3;" text="Admin Panel" textFill="#fcfafa">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="Euphemia UCAS" size="36.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="300.0">
+               <children>
+                  <FontAwesomeIconView glyphName="SEARCH" glyphStyle="-fx-fill:#7C8184" size="1.3em" />
+                  <TextField prefHeight="31.0" prefWidth="275.0" promptText="Search" style="-fx-background-color: transparent;" styleClass="btns" stylesheets="@../../../../../Downloads/styleproject.css" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Charter Bold" size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="85.0" prefHeight="60.0" prefWidth="300.0">
+               <children>
+                  <FontAwesomeIconView glyphName="DASHBOARD" glyphStyle="-fx-fill:#7C8184" size="1.9em" />
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onAction="#dashboard" prefHeight="35.0" prefWidth="181.0" styleClass="btns" stylesheets="@../../../../../Downloads/styleproject.css" text="Dashboard" textFill="#f5f2f2">
+                     <font>
+                        <Font name="Apple Symbols" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="113.0" prefHeight="60.0" prefWidth="300.0">
+               <children>
+                  <FontAwesomeIconView glyphName="BUILDING" glyphStyle="-fx-fill:#7C8184" size="1.9em" />
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onAction="#addroom" prefHeight="27.0" prefWidth="181.0" styleClass="btns" stylesheets="@../../../../../Downloads/styleproject.css" text="Add a room" textFill="#f5f2f2">
+                     <font>
+                        <Font name="Apple Symbols" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="153.0">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="193.0" prefHeight="61.0" prefWidth="300.0">
+               <children>
+                  <FontAwesomeIconView glyphName="USERS" glyphStyle="-fx-fill:#7C8184" size="1.9em" wrappingWidth="23.428571701049805" />
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onAction="#addstudent" prefHeight="27.0" prefWidth="181.0" styleClass="btns" stylesheets="@../../../../../Downloads/styleproject.css" text="Add a student" textFill="#f5f2f2">
+                     <font>
+                        <Font name="Apple Symbols" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="233.0" prefHeight="61.0" prefWidth="300.0">
+               <children>
+                  <FontAwesomeIconView glyphName="FILE" glyphStyle="-fx-fill:#7C8184" size="1.9em" />
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onAction="#feedetails" prefHeight="27.0" prefWidth="181.0" styleClass="btns" stylesheets="@../../../../../Downloads/styleproject.css" text="Fee Detail" textFill="#f5f2f2">
+                     <font>
+                        <Font name="Apple Symbols" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="273.0" prefHeight="60.0" prefWidth="300.0">
+               <children>
+                  <FontAwesomeIconView glyphName="GEAR" glyphStyle="-fx-fill:#7C8184" size="1.9em" />
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onAction="#settings" prefHeight="20.0" prefWidth="181.0" styleClass="btns" stylesheets="@../../../../../Downloads/styleproject.css" text="Settings" textFill="#f5f2f2">
+                     <font>
+                        <Font name="Apple Symbols" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="298.0" prefHeight="747.0" prefWidth="639.0">
+         <children>
+            <HBox prefHeight="26.0" prefWidth="558.0" style="-fx-background-color: #FFFF33;">
+               <children>
+                  <Text fill="#464242" strokeType="OUTSIDE" strokeWidth="0.0" text="IIIT HOSTEL " textAlignment="CENTER" wrappingWidth="557.0107421875">
+                     <font>
+                        <Font name="Lucida Sans Demibold" size="40.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox id="HBox" prefHeight="607.0" prefWidth="507.0" style="-fx-background-color: skyblue;" styleClass="jfx-add" stylesheets="@../../../../../Downloads/students.css">
+               <children>
+                  <Pane prefHeight="687.0" prefWidth="615.0">
+                     <children>
+                        <VBox layoutX="48.0" layoutY="24.0" prefHeight="111.0" prefWidth="397.0">
+                           <children>
+                              <TableView fx:id="tableview" prefHeight="151.0" prefWidth="333.0">
+                                <columns>
+                                  <TableColumn fx:id="bno" onEditCommit="#changeBuilding" prefWidth="204.0" text="Building No" />
+                                  <TableColumn fx:id="rno" minWidth="0.0" onEditCommit="#changeRoom" prefWidth="192.0" text="Room No" />
+                                </columns>
+                              </TableView>
+                              <HBox prefHeight="47.0" prefWidth="300.0" />
+                           </children>
+                        </VBox>
+                        <JFXButton layoutX="14.0" layoutY="530.0" onAction="#Add" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #448EBE;" text="Add" />
+                        <JFXButton layoutX="238.0" layoutY="524.0" onAction="#Delete" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: #448EBE;" text="Remove" />
+                        <HBox layoutX="14.0" layoutY="423.0" prefHeight="71.0" prefWidth="397.0" />
+                        <Label layoutX="20.0" layoutY="244.0" prefHeight="45.0" prefWidth="218.0" text="Enter Building No." />
+                        <JFXComboBox fx:id="cboo" layoutX="277.0" layoutY="253.0" prefHeight="27.0" prefWidth="281.0" />
+                        <Label layoutX="20.0" layoutY="329.0" prefHeight="45.0" prefWidth="218.0" text="Enter Romm No." />
+                        <JFXTextField fx:id="Roo" layoutX="277.0" layoutY="338.0" prefHeight="27.0" prefWidth="281.0" />
+                     </children>
+                  </Pane>
+               </children></HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

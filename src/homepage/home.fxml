@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="950.0" styleClass="parent" stylesheets="@styleproject.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="homepage.HomeController">
+   <children>
+      <VBox prefHeight="650.0" prefWidth="300.0" style="-fx-background-color: #525150;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="300.0" style="-fx-background-color: #00A2D3;" text="Admin Panel" textFill="#fcfafa">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="Euphemia UCAS" size="36.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="300.0" styleClass="btns" stylesheets="@../css/styleproject.css">
+               <children>
+                  <FontAwesomeIconView glyphName="SEARCH" glyphStyle="-fx-fill:#7C8184" size="1.9em" />
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onAction="#search" prefHeight="37.0" prefWidth="192.0" styleClass="btns" stylesheets="@../css/styleproject.css" text="Search" textFill="#f5f2f2">
+                     <font>
+                        <Font name="Apple Symbols" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="85.0" prefHeight="60.0" prefWidth="300.0" styleClass="btns" stylesheets="@../css/styleproject.css">
+               <children>
+                  <FontAwesomeIconView glyphName="DASHBOARD" glyphStyle="-fx-fill:#7C8184" size="1.9em" />
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onAction="#dashboard" prefHeight="35.0" prefWidth="181.0" styleClass="btns" stylesheets="@../css/styleproject.css" text="Dashboard" textFill="#f5f2f2">
+                     <font>
+                        <Font name="Apple Symbols" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="113.0" prefHeight="60.0" prefWidth="300.0" styleClass="btns" stylesheets="@../css/styleproject.css">
+               <children>
+                  <FontAwesomeIconView glyphName="BUILDING" glyphStyle="-fx-fill:#7C8184" size="1.9em" />
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onAction="#rooms" prefHeight="27.0" prefWidth="181.0" styleClass="btns" stylesheets="@../css/styleproject.css" text="Rooms &amp; Hostel" textFill="#f5f2f2">
+                     <font>
+                        <Font name="Apple Symbols" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="153.0">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="193.0" prefHeight="60.0" prefWidth="300.0" styleClass="btns" stylesheets="@../css/styleproject.css">
+               <children>
+                  <FontAwesomeIconView glyphName="USERS" glyphStyle="-fx-fill:#7C8184" size="1.9em" wrappingWidth="23.428571701049805" />
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onAction="#student" prefHeight="27.0" prefWidth="181.0" styleClass="btns" stylesheets="@../css/styleproject.css" text="Student section" textFill="#f5f2f2">
+                     <font>
+                        <Font name="Apple Symbols" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="233.0" prefHeight="60.0" prefWidth="300.0" styleClass="btns" stylesheets="@../css/styleproject.css">
+               <children>
+                  <FontAwesomeIconView glyphName="FILE" glyphStyle="-fx-fill:#7C8184" size="1.9em" />
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onAction="#fee" prefHeight="27.0" prefWidth="181.0" styleClass="btns" stylesheets="@../css/styleproject.css" text="Electricity bill" textFill="#f5f2f2">
+                     <font>
+                        <Font name="Apple Symbols" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="273.0" prefHeight="60.0" prefWidth="300.0" styleClass="btns" stylesheets="@../css/styleproject.css">
+               <children>
+                  <FontAwesomeIconView glyphName="GEAR" glyphStyle="-fx-fill:#7C8184" size="1.9em" />
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" onAction="#settings" prefHeight="27.0" prefWidth="181.0" styleClass="btns" stylesheets="@../css/styleproject.css" text="Settings" textFill="#f5f2f2">
+                     <font>
+                        <Font name="Apple Symbols" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="552.0" layoutY="25.0" text="Students">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="300.0" prefHeight="650.0" prefWidth="650.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="839.0" prefWidth="659.0">
+               <children>
+                  <Label layoutX="202.0" layoutY="30.0" text="WELCOME PAGE">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="hour" alignment="CENTER" layoutX="282.0" layoutY="110.0" prefHeight="79.0" prefWidth="60.0" style="-fx-background-color: #3b444b; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: pink;" text="01" textFill="#52e4ee">
+                     <font>
+                        <Font name="Gujarati Sangam MN" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="minute" alignment="CENTER" layoutX="369.0" layoutY="110.0" prefHeight="79.0" prefWidth="60.0" style="-fx-background-color: #3b444b; -fx-border-radius: 30; -fx-background-radius: 30; -fx-border-color: white;" text="23" textFill="#52e4ee">
+                     <font>
+                        <Font name="Gujarati Sangam MN" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="second" alignment="CENTER" layoutX="455.0" layoutY="110.0" prefHeight="79.0" prefWidth="60.0" style="-fx-background-color: #3b444b; -fx-background-radius: 30; -fx-border-color: white; -fx-border-radius: 30;" text="45" textFill="#52e4ee">
+                     <font>
+                        <Font name="Gujarati Sangam MN" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
